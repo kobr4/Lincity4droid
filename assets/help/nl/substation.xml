@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<Document style="helpdocument">
+	<p style="htitle">Transformatorhuisje</p>
+	<p style="hp">Transformatorhuisjes nemen electriciteit van electriciteitsdraden en verspreiden het naar het omliggende gebied. U kunt zien of, bijvoorbeeld, uw woonwijk electriciteit krijgt door op het icoontje te klikken, en dan op mappoint stats window te kijken.</p>
+	
+	<p style="hp">Dit is een transformatorhuisje</p>
+	<img src="images/tiles/substation-G.png" halign="center"/>
+	<p style="hp">en dit is het icoontje</p>
+	<img src="images/gui/buttonpanel/power/substation.png" halign="center"/>
+	
+	<p style="hsubtitle">Lees ook:</p>
+	<li><a href="powerline">Electriciteitsdraden</a></li>
+	<li><a href="powerssolar">Zonne-energiecentrale</a></li>
+	<li><a href="commune">Houtskoolbranderij</a></li>
+	<li><a href="steel">Staal</a></li>
+	<li><a href="jobs">Werk</a></li>
+</Document>
+

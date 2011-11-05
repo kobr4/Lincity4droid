@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<Document style="helpdocument">
+	<p style="htitle">Surimpression Santé</p>
+	<img src="images/gui/mapview/roundbuttons/round_health.png" halign="center"/>
+	<p style="hp">Ce bouton, situé sous la mini-carte, affichera la couverture médicale. Les zone protégées par un centre médical s'affichent en vert sombre, les autres apparaissent normalement.</p>
+	<p style="hp">Souvenez-vous qu'un centre de santé nécessite 3 mois pour devenir actif.</p>
+	<p style="hp">Cliquer sur la mini-carte (bouton de gauche) recentre la carte principale. Utilisez la touche 'v' pour surimprimer les informations sur la carte principale.</p>
+	
+	<p style="hsubtitle">Voir aussi:</p>
+	<li><a href="mini-screen">Mini-carte</a></li>
+	<li><a href="health">Centre médical</a></li>
+</Document>

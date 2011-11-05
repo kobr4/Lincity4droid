@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<Document style="helpdocument">
+	<p style="htitle">Welzijnskaart</p>
+	<img src="images/gui/mapview/roundbuttons/round_fire.png" halign="center"/>
+	<p style="hp">Gebieden die een ziekenhuis in hun gebied hebben, worden donkergroen gekleurd, andere gebieden krijgen de normale kleur.</p>
+	<p style="hp">Let op! Ziekenhuizen treden pas drie maanden na de bouw in werking.</p>
+	<p style="hp">Links klikken op de minikaart om de kaart te centreren op de plek van uw muiscursor. U kunt wisselen tussen verschillende kaartmodi door de knop 'v' in te drukken of door op de "overlay"-knop te klikken.</p>
+
+	<p style="hsubtitle">Lees ook:</p>
+	<li><a href="mini-screen">Minikaart</a></li>
+	<li><a href="msb-coal">Steenkoolkaart</a></li>
+	<li><a href="msb-cricket">Sportkaart</a></li>
+	<li><a href="msb-fire">Brandkaart</a></li>
+	<li><a href="msb-normal">Normale kaart</a></li>
+	<li><a href="msb-pol">Vervuilingkaart</a></li>
+	<li><a href="msb-transport">Verkeerskaart</a></li>
+	<li><a href="msb-power">Electriciteitskaart</a></li>
+	<li><a href="msb-starve">Sterftekaart</a></li>
+	<li><a href="msb-ub40">Werkloosheidskaart</a></li>
+</Document>

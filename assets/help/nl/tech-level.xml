@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<Document style="helpdocument">
+	<p style="htitle">Technologie nivo</p>
+	<p style="hp">Het technologie nivo van uw stad bepaald een aantal dingen zoals wat u kan bouwen en hoe efficient bepaalde dingen gebeuren.</p>
+	<p style="hp">Om uw technologie te vermeerderen, moet u Monumenten, Scholen en Universiteiten bouwen (en van de juiste voorraden voorzien).</p>
+	<p style="hp">Wanneer u nog weinig technologie heeft, kan u alleen monumenten bouwen. Wanneer deze er een tijdje zijn, zal u scholen <i>uitvinden</i>. Scholen zorgen voor meer technologie dan monumenten.</p>
+	<p style="hp">Wanneer u en nog hoger technologie nivo bereikt heeft, zal u universiteiten <i>uitvinden</i>. Deze zorgen voor nog meer technologie dan scholen, maar ze gebruiken <b>erg veel</b> voorraden.</p>
+	<p style="hp">Des te meer technologie u heeft, des te sneller het zal <i>verslijten</i>. Dit betekent dat hoe hoger technologie nivo u wilt, des te meer scholen en universiteiten u nodig zal hebben.</p>
+	<p style="hp">Wees er ook op bedacht dat als u voor een of andere reden, laten we zeggen, twee universiteiten sluit (of ze krijgen plotseling geen vooraden meer) uw technologie nivo begint te <b>dalen</b>.</p>
+	<p style="hp">Het percentage van gelukte lanceringen is gelijk met uw technische nivo.</p>
+	
+	<p style="hsubtitle">Lees ook:</p>
+	<li><a href="monument">Monumenten</a></li>
+	<li><a href="school">Scholen</a></li>
+	<li><a href="university">Universiteiten</a></li>
+	<li><a href="rocket">Lanceerplatform</a></li>
+</Document>

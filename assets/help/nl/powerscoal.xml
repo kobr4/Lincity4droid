@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<Document style="helpdocument">
+	<p style="htitle">Steenkoolcentrale</p>
+	<p style="hp">Steenkoolcentrales produceren van steenkool electriciteit die geplaatst worden op electriciteitsdraden.</p>
+	<p style="hp">De technologie <b>op de bouwdatum</b> bepaalt de effectiviteit van de productie. U kunt, wanneer uw technologie nivo veel gestegen is, een oude steenkoolcentrale afbreken en die herbouwen met een nieuwere, meer efficientere.</p>
+	
+	<p style="hp">Dit is Steenkoolcentrale</p>
+	<img src="images/tiles/powerscoal-empty.png" halign="center"/>
+	<p style="hp">en dit is het icoontje</p>
+	<img src="images/gui/buttonpanel/power/coalpower.png" halign="center"/>
+	
+	<p style="hsubtitle">Lees ook:</p>
+	<li><a href="transport">Transport</a></li>
+	<li><a href="tech-level">Technologie nivo</a></li>
+	<li><a href="powerline">Electriciteitsdraad</a></li>
+	<li><a href="msb-power">Electriciteitskaart</a></li>
+</Document>

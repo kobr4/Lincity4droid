@@ -1,0 +1,22 @@
+﻿<?xml version="1.0"?>
+<Document style="helpdocument">
+	<p style="htitle">Verkstäder</p>
+	<p style="hp">Verkstäder konverterar mat, kol och jobb till varor. Mat?... tja, bomull och ull räknas som mat i det här spelet.</p>
+	<p style="hp">Verkstäder använder ganska mycket mat så du kan lätt få brist på mat om du inte tänker på detta. (Det är ett mindre problem när du har väderkvarnar eftersom de kan ge ström till bondgårdar som då gör dom mer effektiva)</p>
+	<p style="hp">Verkstäder måste inte vara anslutna till transporter. Om inte, måste de vara inom räckhåll för en marknad med kol, jobb och mat. Du kan se när verkstaden arbetar eftersom rök och ånga kommer ut från byggnaden.</p>
+	
+	<p style="hp">Detta är en verkstad</p>
+	<img src="images/tiles/mill1.png" halign="center"/>
+	<p style="hp">Detta är en icke-arbetande verkstad</p>
+	<img src="images/tiles/mill0.png" halign="center"/>
+	<p style="hp">och detta är dess ikon</p>
+	<img src="images/gui/buttonpanel/parks/mills.png" halign="center"/>
+	
+	<p style="hsubtitle">Se också:</p>
+	<li><a href="goods">Varor</a></li>
+	<li><a href="food">Mat</a></li>
+	<li><a href="coal">Kol</a></li>
+	<li><a href="jobs">Jobb</a></li>
+	<li><a href="transport">Transport</a></li>
+	<li><a href="windmill">Väderkvarnar</a></li>
+</Document>

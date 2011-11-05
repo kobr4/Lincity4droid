@@ -1,0 +1,13 @@
+engglobs.cpp
+engine.cpp
+fileutil.cpp
+init_game.cpp
+lc_locale.cpp
+lclib.cpp
+lintypes.cpp
+loadsave.cpp
+old_ldsvguts.cpp
+power.cpp
+simulate.cpp
+stats.cpp
+transport.cpp

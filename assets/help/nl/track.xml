@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<Document style="helpdocument">
+	<p style="htitle">Landweggetjes</p>
+	<p style="hp">Landweggetjes zijn de eenvoudigste, en goedkoopste vorm van transport. Er kan ook het minste verkeer op (weinig capaciteit). Aan de andere kant, ze maken ook geen luchtvervuiling.</p>
+	
+	<p style="hp">Dit is een landweggetje</p>
+	<img src="images/tiles/trackud.png" halign="center"/>
+	<p style="hp">en dit is het icoontje</p>
+	<img src="images/gui/buttonpanel/transport/tracks.png" halign="center"/>
+	
+	<p style="hsubtitle">Lees ook:</p>
+	<li><a href="transport">Verkeer</a></li>
+	<li><a href="commune">Houtskoolbranderij</a></li>
+</Document>

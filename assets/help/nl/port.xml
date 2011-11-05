@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<Document style="helpdocument">
+	<p style="htitle">Havens</p>
+	<p style="hp">Via havens kunt u goederen, staal, ijzererts, kolen en voedsel importeren en exporteren. Importeren kost geld en exporteren levert geld op.</p>
+	<p style="hp">De haven kan pas gebruikt worden als het verbonden is met een weg of spoorweg. U kan kiezen wat wordt geïmporteerd door dubbelklikken op de haven. U krijgt dan een menu met lijsten waarmee u kunt selecteren wat u wel of niet wil importeren en exporten.</p>
+	<p style="hp">Een haven <b>moet</b> zo met een rivier verbonden zijn dat rechts van de haven water is.</p>
+	<p style="hp">Er wordt niets geïmporteerd totdat u dat heeft gekozen in de checkbox.</p>
+	<p style="hp">De haven probeert om zoveel mogelijk te exporteren. Als u moet exporteren (om geld te verdienen), maar de export-hoeveelheid wilt beperken, zult u een slechter verbindingsweggetje moeten bouwen, een lange verbindingsweg gebruiken of langs een markt moeten gaan. U zult een beetje moeten experimenteren om het juiste resultaat te krijgen.</p>
+	<p style="hp">Een haven in werking levert een beetje technologie op. Letop: Exporterbedrijven willen veel exporteren.</p>
+
+	<p style="hp">Dit is een haven</p>
+	<img src="images/tiles/ex_port.png" halign="center"/>
+	<p style="hp">en dit is het icoontje</p>
+	<img src="images/gui/buttonpanel/transport/port.png" halign="center"/>
+	
+	<p style="hsubtitle">Lees ook:</p>
+	<li><a href="rivers">Rivieren</a></li>
+	<li><a href="transport">Transport</a></li>
+	<li><a href="market">Markten</a></li>
+	<li><a href="coal">Kolen</a></li>
+	<li><a href="ore">IJzererts</a></li>
+	<li><a href="goods">Goederen</a></li>
+	<li><a href="steel">Staal</a></li>
+</Document>

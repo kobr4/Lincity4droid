@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<Document style="helpdocument">
+	<p style="htitle">Economische grafieken</p>
+	<p style="hp">Dit grafiek laat vier gekleurde lijnen zien.Deze tonen de belangrijkste economische factoren.</p>
+	<li>
+		<span color="brown">Bevolking</span>
+        De bruine lijn is uw bevolking. 
+	U ziet dit in een logaritmische schaal.
+	</li>
+	<li>
+		<span color="blue">Daklozen</span>
+        De blauwe lijn toont de vraag naar huizen. De hoogte van de grafiek is komt overeen met de hoeveelheid daklozen.
+	</li>
+	<li>
+		<span color="yellow">Werkzoekende</span>
+        De massieve gele 'balken' laten zien dat er werkloosheid is. De schaal van deze grafiek verandert met het aantal van de bevolking mee. Deze grafiek is massief (gevuld) om uw aandacht te trekken.
+	</li>
+	<li>
+		<span color="red">Stervende</span> 
+        De massieve rode 'balken' laten zien dat er mensen sterven. De schaal van de grafiek verandert met het aantal van de bevolking mee. Deze grafiek is massief (gevuld) om uw aandacht te trekken. Deze balken worden over de werkloosheid-balken getekend.
+	</li>
+</Document>

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<Document style="helpdocument">
+	<p style="htitle">Lanceerplatform</p>
+	<p style="hp">Raketten maakt het mogelijk om uw bevolking te evacueren naar een andere planeet, en daarmee het spel te eindigen.</p>
+	<p style="hp">U moet vijf succesvolle onbemande raket-lanceringen hebben gehad voordat u kan beginnen met evacueren. In elke succesvolle evacuatie-raket zitten 1000 mensen.</p>
+	<p style="hp">Wanneer een lancering mislukt, moet u eerst weer 5 onbemande raketten lanceren voordat u weer meer mensen kan evacueren.</p>
+	<p style="hp">De kans op een succesvolle lancering wordt bepaalt door het technische nivo op het moment van lanceren. Dit betekent dat uw technische nivo, zeg, 80% is, dat vier van de vijf lanceringen lukken. 100% of meer betekent dat alle lanceringen lukken. (Enkele van de <i>eerste 5</i> zullen toch nog mislukken.) U moet voor elke gebouwde raket een lanceerplatform bouwen.</p>
+	<p style="hp">Lanceerplatforms hoeven niet verbonden te zijn met een (spoor)weg, ze moeten wel in de buurt liggen van een markt. Ze gebruiken veel staal, goederen,geld en werk om te bouwen. Wanneer de raket klaar is, krijgt u een bericht met de vraag of u de raket nu dan wel later wil lanceren. Wanneer u voor later kiest, kunt u de raket lanceren door op het lanceerplatform te klikken. U kunt zoveel raketten klaar voor lancering hebben staan als u wilt.</p>
+	<p style="hp">Wanneer een raket is eenmaal gebouwd, maar daarna blijft wachten totdat het wordt gelanceerd, gebruikt het niet langer staal, goederen of banen, maar blijft wel veel geld kosten (voor onderhoud).</p>
+	<p style="hp">Dit is een lanceerplatform</p>
+	<img src="images/tiles/rocket2.png" halign="center"/>
+	<p style="hp">En dit is het icoontje</p>
+	<img src="images/gui/buttonpanel/transport/rocket.png" halign="center"/>
+	
+	<p style="hsubtitle">Lees ook:</p>
+	<li><a href="market">Markt</a></li>
+	<li><a href="ore">IJzererts</a></li>
+	<li><a href="commune">Houtkoolbranderij</a></li>
+	<li><a href="steel">Staal</a></li>
+	<li><a href="jobs">Werk</a></li>
+</Document>

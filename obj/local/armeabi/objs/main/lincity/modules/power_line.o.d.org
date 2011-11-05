@@ -1,0 +1,56 @@
+C:/Users/kobr4/Desktop/Programmation/workspaceAndroidNdk/Lincity4droid/obj/local/armeabi/objs/main/lincity/modules/power_line.o: \
+ C:/Users/kobr4/Desktop/Programmation/workspaceAndroidNdk/Lincity4droid/jni/src/lincity/modules/power_line.cpp \
+ C:/Users/kobr4/Desktop/Programmation/workspaceAndroidNdk/Lincity4droid/jni/src/lincity/modules/modules.h \
+ C:/Users/kobr4/Desktop/Programmation/workspaceAndroidNdk/Lincity4droid/jni/src/lincity/modules/../lctypes.h \
+ C:/Users/kobr4/Desktop/Programmation/workspaceAndroidNdk/Lincity4droid/jni/src/tinygettext/gettext.hpp \
+ C:/Users/kobr4/Desktop/Programmation/workspaceAndroidNdk/Lincity4droid/jni/src/tinygettext/TinyGetText.hpp \
+ C:/Users/kobr4/Desktop/Programmation/android-sdk-windows/android-ndk-r6b/sources/cxx-stl/gnu-libstdc++/include/map \
+ C:/Users/kobr4/Desktop/Programmation/android-sdk-windows/android-ndk-r6b/sources/cxx-stl/gnu-libstdc++/include/vector \
+ C:/Users/kobr4/Desktop/Programmation/android-sdk-windows/android-ndk-r6b/sources/cxx-stl/gnu-libstdc++/include/set \
+ C:/Users/kobr4/Desktop/Programmation/android-sdk-windows/android-ndk-r6b/sources/cxx-stl/gnu-libstdc++/include/string \
+ C:/Users/kobr4/Desktop/Programmation/workspaceAndroidNdk/Lincity4droid/jni/src/lincity/modules/../engglobs.h \
+ C:/Users/kobr4/Desktop/Programmation/workspaceAndroidNdk/Lincity4droid/jni/src/lincity/modules/../lin-city.h \
+ C:/Users/kobr4/Desktop/Programmation/workspaceAndroidNdk/Lincity4droid/jni/src/lincity/modules/../lintypes.h \
+ C:/Users/kobr4/Desktop/Programmation/workspaceAndroidNdk/Lincity4droid/jni/src/lincity/modules/../engine.h \
+ C:/Users/kobr4/Desktop/Programmation/workspaceAndroidNdk/Lincity4droid/jni/src/lincity/modules/../stats.h \
+ C:/Users/kobr4/Desktop/Programmation/workspaceAndroidNdk/Lincity4droid/jni/src/gui_interface/mps.h \
+ C:/Users/kobr4/Desktop/Programmation/workspaceAndroidNdk/Lincity4droid/jni/src/lincity/modules/../lclib.h \
+ C:/Users/kobr4/Desktop/Programmation/workspaceAndroidNdk/Lincity4droid/jni/src/lincity/modules/market.h \
+ C:/Users/kobr4/Desktop/Programmation/workspaceAndroidNdk/Lincity4droid/jni/src/lincity/modules/../power.h \
+ C:/Users/kobr4/Desktop/Programmation/workspaceAndroidNdk/Lincity4droid/jni/src/lincity/modules/power_line.h
+
+C:/Users/kobr4/Desktop/Programmation/workspaceAndroidNdk/Lincity4droid/jni/src/lincity/modules/modules.h:
+
+C:/Users/kobr4/Desktop/Programmation/workspaceAndroidNdk/Lincity4droid/jni/src/lincity/modules/../lctypes.h:
+
+C:/Users/kobr4/Desktop/Programmation/workspaceAndroidNdk/Lincity4droid/jni/src/tinygettext/gettext.hpp:
+
+C:/Users/kobr4/Desktop/Programmation/workspaceAndroidNdk/Lincity4droid/jni/src/tinygettext/TinyGetText.hpp:
+
+C:/Users/kobr4/Desktop/Programmation/android-sdk-windows/android-ndk-r6b/sources/cxx-stl/gnu-libstdc++/include/map:
+
+C:/Users/kobr4/Desktop/Programmation/android-sdk-windows/android-ndk-r6b/sources/cxx-stl/gnu-libstdc++/include/vector:
+
+C:/Users/kobr4/Desktop/Programmation/android-sdk-windows/android-ndk-r6b/sources/cxx-stl/gnu-libstdc++/include/set:
+
+C:/Users/kobr4/Desktop/Programmation/android-sdk-windows/android-ndk-r6b/sources/cxx-stl/gnu-libstdc++/include/string:
+
+C:/Users/kobr4/Desktop/Programmation/workspaceAndroidNdk/Lincity4droid/jni/src/lincity/modules/../engglobs.h:
+
+C:/Users/kobr4/Desktop/Programmation/workspaceAndroidNdk/Lincity4droid/jni/src/lincity/modules/../lin-city.h:
+
+C:/Users/kobr4/Desktop/Programmation/workspaceAndroidNdk/Lincity4droid/jni/src/lincity/modules/../lintypes.h:
+
+C:/Users/kobr4/Desktop/Programmation/workspaceAndroidNdk/Lincity4droid/jni/src/lincity/modules/../engine.h:
+
+C:/Users/kobr4/Desktop/Programmation/workspaceAndroidNdk/Lincity4droid/jni/src/lincity/modules/../stats.h:
+
+C:/Users/kobr4/Desktop/Programmation/workspaceAndroidNdk/Lincity4droid/jni/src/gui_interface/mps.h:
+
+C:/Users/kobr4/Desktop/Programmation/workspaceAndroidNdk/Lincity4droid/jni/src/lincity/modules/../lclib.h:
+
+C:/Users/kobr4/Desktop/Programmation/workspaceAndroidNdk/Lincity4droid/jni/src/lincity/modules/market.h:
+
+C:/Users/kobr4/Desktop/Programmation/workspaceAndroidNdk/Lincity4droid/jni/src/lincity/modules/../power.h:
+
+C:/Users/kobr4/Desktop/Programmation/workspaceAndroidNdk/Lincity4droid/jni/src/lincity/modules/power_line.h:
