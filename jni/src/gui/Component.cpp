@@ -96,6 +96,7 @@ Component::eventChild(Child& child, const Event& event, bool visible)
         || event.type == Event::MOUSEBUTTONUP
         || event.type == Event::FINGERDOWN
         || event.type == Event::FINGERUP
+        || event.type == Event::FINGERMOTION
         ) {
         ev.mousepos -= child.position;
         if(visible && child.component->opaque(ev.mousepos))

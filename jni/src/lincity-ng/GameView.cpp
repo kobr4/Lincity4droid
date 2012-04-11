@@ -895,7 +895,7 @@ void GameView::event(const Event& event)
                 viewport += event.mousemove;
                 setDirty();
                 break;
-            }         
+            }
             if(!event.inside) {
                 mouseInGameView = false;
                 break;
@@ -964,8 +964,24 @@ void GameView::event(const Event& event)
                 mouseScrollState |= SCROLL_DOWN;
             }
             */
-            fingerScrollX = event.fingermove.x;
-            fingerScrollY = event.fingermove.y;
+            //LOGD("FINGERMOTION");
+
+            if(!event.inside) {
+                fingerInGameView = false;
+                break;
+            }
+
+            fingerInGameView = true;
+
+            MapPoint tile = getTile(event.mousepos);
+
+            if(tileUnderMouse != tile) {
+                tileUnderMouse = tile;
+                setDirty();
+            }
+
+            //fingerScrollX = event.fingermove.x;
+            //fingerScrollY = event.fingermove.y;
         }
         break;
 
@@ -973,9 +989,12 @@ void GameView::event(const Event& event)
             if(!event.inside) {
                 break;
             }
-                if( !blockingDialogIsOpen )
-                    editMap( getTile( event.mousepos ), SDL_BUTTON_LEFT); //edit tile
-             break;
+            if( !blockingDialogIsOpen )
+                editMap( getTile( event.mousepos ), SDL_BUTTON_LEFT); //edit tile
+                
+            fingerInGameView = false;
+
+            break;
         case Event::MOUSEBUTTONUP:
             if(event.mousebutton == SDL_BUTTON_MIDDLE ){
                 getMiniMap()->hideMpsEnv();
@@ -1206,7 +1225,7 @@ void GameView::requestRedraw()
     //TODO: do this only when View changed
     //Tell Minimap about new Corners
     getMiniMap()->setGameViewCorners( getTile(Vector2(0, 0)),
-            getTile(Vector2(getWidth(), 0)), 
+            getTile(Vector2(getWidth(), 0)),
             getTile(Vector2(getWidth(), getHeight())),
             getTile(Vector2(0, getHeight()) ) );  
 
@@ -1445,6 +1464,7 @@ void GameView::drawTile(Painter& painter, MapPoint tile)
  */
 void GameView::markTile( Painter& painter, MapPoint tile )
 {
+
     Vector2 tileOnScreenPoint = getScreenPoint(tile);
     if( cursorSize == 0 ) {
         Color alphawhite( 255, 255, 255, 128 );
@@ -1489,7 +1509,7 @@ void GameView::markTile( Painter& painter, MapPoint tile )
         tileOnScreenPoint.x = tileOnScreenPoint.x - (tileWidth * cursorSize / 2);
         tileOnScreenPoint.y -= tileHeight; 
         tilerect.move( tileOnScreenPoint );    
-        fillDiamond( painter, tilerect );    
+        fillDiamond( painter, tilerect );
 
         // Draw range for selected_module_type
         int range = 0;
@@ -1544,7 +1564,7 @@ void GameView::markTile( Painter& painter, MapPoint tile )
         	screenPoint.x -= tileWidth  * ( range - 0.5 * reduceNW );
         	screenPoint.y -= tileHeight * ( range + 1 - reduceNW );
         	rangerect.move( screenPoint );
-        	fillDiamond( painter, rangerect );         	
+        	fillDiamond( painter, rangerect );
         }           
     }
 }
@@ -1633,7 +1653,7 @@ void GameView::draw(Painter& painter)
         }
     }
    
-    int cost = 0; 
+    int cost = 0;
     //Mark Tile under Mouse 
     if( mouseInGameView  && !blockingDialogIsOpen ) {
         MapPoint lastRazed( -1,-1 );
@@ -1667,6 +1687,77 @@ void GameView::draw(Painter& painter)
                 currentTile.y += stepy;
             }
         } 
+        markTile( painter, tileUnderMouse );
+        tiles++;
+        if( (selected_module_type == CST_GREEN ) && realTile( currentTile ) != lastRazed ) { 
+            	  cost += bulldozeCost( tileUnderMouse );
+        } else {
+            cost += buildCost( tileUnderMouse );
+        } 
+        std::stringstream prize;
+        if( selected_module_type == CST_GREEN ){
+            if( roadDragging ){
+                prize << _("Estimated Bulldoze Cost: ");
+            } else {
+                prize << _("Bulldoze Cost: ");
+            }
+            if( cost > 0 ) {
+                prize << cost << _("$");
+            } else {
+                prize << _("n/a");
+            }
+            printStatusMessage( prize.str() );
+        } else if( selected_module_type == CST_TRACK_LR || selected_module_type == CST_ROAD_LR
+                || selected_module_type == CST_RAIL_LR )
+        {
+            int group = main_types[ selected_module_type ].group;
+            std::string buildingName = main_groups[ group ].name;
+	    prize << dictionaryManager->get_dictionary().translate( buildingName );
+            prize << _(": Cost to build ");
+            if( cost > 0 ) {
+                prize << cost << _("$");
+        } else {
+                prize << _("n/a");
+            }
+            printStatusMessage( prize.str() );
+        } else {
+           showToolInfo( tiles );
+        }    
+    }
+    
+    //Mark tile under finger
+    if( fingerInGameView  && !blockingDialogIsOpen ) {
+        MapPoint lastRazed( -1,-1 );
+        int tiles = 0;
+        if( roadDragging && ( cursorSize == 1 ) ){
+            //use same method to find all Tiles as in GameView::event(const Event& event)
+            int stepx = ( startRoad.x > tileUnderMouse.x ) ? -1 : 1;
+            int stepy = ( startRoad.y > tileUnderMouse.y ) ? -1 : 1;
+            currentTile = startRoad;
+            while( currentTile.x != tileUnderMouse.x ) {
+                markTile( painter, currentTile );
+                //we are speaking of tools, so CST_GREEN == bulldozer
+                if( (selected_module_type == CST_GREEN) && (realTile( currentTile ) != lastRazed) ){ 
+                    	cost += bulldozeCost( currentTile );
+                    	lastRazed = realTile( currentTile );
+                } else {
+                    cost += buildCost( currentTile );
+                }
+                tiles++;
+                currentTile.x += stepx;
+            }
+            while( currentTile.y != tileUnderMouse.y ) {
+                markTile( painter, currentTile );
+                if( (selected_module_type == CST_GREEN ) && realTile( currentTile ) != lastRazed ){
+                    	cost += bulldozeCost( currentTile );
+                    	lastRazed = realTile( currentTile );
+                } else {
+                    cost += buildCost( currentTile );
+                }
+                tiles++;
+                currentTile.y += stepy;
+            }
+        }
         markTile( painter, tileUnderMouse );
         tiles++;
         if( (selected_module_type == CST_GREEN ) && realTile( currentTile ) != lastRazed ) { 

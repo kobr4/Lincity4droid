@@ -209,7 +209,10 @@ PainterGL::drawRectangle(const Rect2D& rect)
 void
 PainterGL::fillPolygon(int numberPoints, const Vector2* points)
 {
-    LOGD("[Lincity]PainterGL::fillPolygon()\n");
+    //LOGD("[Lincity]PainterGL::fillPolygon() %d\n",numberPoints);
+    //LOGD("[Lincity]PainterGL::fillPolygon() %f %f\n",points[0].x,points[0].y);
+    //LOGD("[Lincity]PainterGL::fillPolygon() %f %f\n",points[1].x,points[1].y);
+    //LOGD("[Lincity]PainterGL::fillPolygon() %f %f\n",points[2].x,points[2].y);
     glColor4ub(fillColor.r, fillColor.g, fillColor.b, fillColor.a);
     glDisable(GL_TEXTURE_2D);
               /*
@@ -218,6 +221,20 @@ PainterGL::fillPolygon(int numberPoints, const Vector2* points)
         glVertex2f(points[i].x, points[i].y);
     glEnd();
                 */
+
+    GLfloat vertices[] = {
+      points[2].x,points[2].y,0., 
+      points[1].x,points[1].y,0., 
+      points[0].x,points[0].y,0.,
+      points[3].x,points[3].y,0.,
+      points[2].x,points[2].y,0.,
+      points[0].x,points[0].y,0.};
+
+    glEnableClientState (GL_VERTEX_ARRAY);
+    glVertexPointer (3,GL_FLOAT,0,vertices);
+    glDrawArrays (GL_TRIANGLES,0,6);
+    glDisableClientState (GL_VERTEX_ARRAY);
+
     glEnable(GL_TEXTURE_2D);
 }
 
@@ -231,8 +248,16 @@ PainterGL::drawPolygon(int numberPoints, const Vector2* points)
     glBegin(GL_LINE_LOOP);
     for( int i = 0; i < numberPoints; i++ )
         glVertex2f(points[i].x, points[i].y);
-    glEnd();
-                    */
+    glEnd();       */
+
+    GLfloat vertices[] = {points[0].x,points[0].y,0., points[1].x,points[1].y,0.
+    , points[2].x,points[2].y,0.,points[3].x,points[3].y,0.};
+
+    glEnableClientState (GL_VERTEX_ARRAY);
+    glVertexPointer (3,GL_FLOAT,0,vertices);
+    glDrawArrays (GL_LINE_LOOP,0,4);
+    glDisableClientState (GL_VERTEX_ARRAY);
+
     glEnable(GL_TEXTURE_2D);
 }
 

@@ -137,6 +137,8 @@ private:
     MapPoint tileUnderMouse;
     Vector2 dragStart;
     bool mouseInGameView;
+    //Added for touch support
+    bool fingerInGameView;
     bool dragging, rightButtonDown;
     Uint32 dragStartTime;
     
